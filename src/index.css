@@ -36,7 +36,7 @@ body {
 }
 
 input {
-  min-width: 24rem;
+  max-width: 24rem;
   font-size: 2rem;
   padding: 0.5rem;
   outline: none;
@@ -174,4 +174,34 @@ input {
 
 .todo-number .complete {
   color: rgb(81, 125, 81);
+}
+
+@media (max-width: 650px) {
+  .item-container {
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .item-container {
+    max-width: 25rem;
+  }
+
+  input {
+    max-width: 18rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .item-container {
+    max-width: 20rem;
+  }
+
+  input {
+    max-width: 14rem;
+  }
+
+  .btn {
+    padding: 2px;
+  }
 }

@@ -36,13 +36,16 @@ const List = ({ list, setList, editItem, setEditItem }) => {
             key={id}
           >
             <p className="item">{name}</p>
-            <button className="complete-btn" onClick={() => completeTask(id)}>
+            <button
+              className="complete-btn btn"
+              onClick={() => completeTask(id)}
+            >
               <GrStatusGood />
             </button>
-            <button className="edit-btn" onClick={() => editTask(id)}>
+            <button className="edit-btn btn" onClick={() => editTask(id)}>
               <FiEdit />
             </button>
-            <button className="delete-btn" onClick={() => deleteTask(id)}>
+            <button className="delete-btn btn" onClick={() => deleteTask(id)}>
               <AiOutlineDelete />
             </button>
           </div>

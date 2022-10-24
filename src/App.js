@@ -36,7 +36,7 @@ function App() {
         setEditItem={setEditItem}
       />
       {list.length > 0 && (
-        <button className="clear-btn" onClick={() => setList([])}>
+        <button className="clear-btn btn" onClick={() => setList([])}>
           Clear List
         </button>
       )}
